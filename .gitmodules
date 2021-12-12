@@ -1,9 +1,6 @@
 [submodule "CandyPaper.vim"]
 	path = CandyPaper.vim
 	url = https://github.com/dfxyz/CandyPaper.vim
-[submodule "CandyPaper.mintty"]
-	path = CandyPaper.mintty
-	url = https://github.com/dfxyz/CandyPaper.mintty
 [submodule "CandyPaper.idea"]
 	path = CandyPaper.idea
 	url = https://github.com/dfxyz/CandyPaper.idea
