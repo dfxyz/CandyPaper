@@ -9,6 +9,9 @@ Light and dark color schemes for some applications:
 * MinTTY
 * ...
 
+The following parts are the color palette previews for both schemes.
+However, you may need a local markdown viewer to render them correctly.
+
 ## Light Scheme Preview
 ### Basic Colors
 <div style="background: #F2FFE6">

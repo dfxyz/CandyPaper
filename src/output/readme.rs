@@ -13,6 +13,9 @@ Light and dark color schemes for some applications:
 * MinTTY
 * ...
 
+The following parts are the color palette previews for both schemes.
+However, you may need a local markdown viewer to render them correctly.
+
 "#;
 
 pub fn generate(light_scheme: &ColorScheme, dark_scheme: &ColorScheme) -> String {
