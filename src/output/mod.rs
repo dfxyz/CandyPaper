@@ -3,17 +3,17 @@ use std::{fs::File, io::Write};
 use crate::ColorScheme;
 
 mod css;
-mod html;
 mod idea;
 mod mintty;
+mod readme;
 mod totalcmd;
 mod vim;
 mod windows_terminal;
 
-pub fn html(light_scheme: &ColorScheme, dark_scheme: &ColorScheme) -> std::io::Result<()> {
-    const PATH: &str = "CandyPaperPreview.html";
+pub fn readme(light_scheme: &ColorScheme, dark_scheme: &ColorScheme) -> std::io::Result<()> {
+    const PATH: &str = "README.md";
 
-    let content = html::generate(light_scheme, dark_scheme);
+    let content = readme::generate(light_scheme, dark_scheme);
     File::options()
         .create(true)
         .write(true)

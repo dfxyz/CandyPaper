@@ -11,7 +11,7 @@ fn main() {
 
     let now = chrono::Local::now();
 
-    output::html(&light_scheme, &dark_scheme).unwrap();
+    output::readme(&light_scheme, &dark_scheme).unwrap();
     output::vim(&now, &light_scheme, &dark_scheme).unwrap();
     output::idea(&now, &light_scheme, &dark_scheme).unwrap();
     output::totalcmd(&light_scheme, &dark_scheme).unwrap();
