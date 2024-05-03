@@ -49,7 +49,7 @@ pub fn generate_dark(now: &chrono::DateTime<chrono::Local>, scheme: &ColorScheme
 }
 
 fn generate(s: &mut String, scheme: &ColorScheme) {
-    writeln!(s, "  <color>").unwrap();
+    writeln!(s, "  <colors>").unwrap();
     for color in &scheme.idea_colors {
         let name = color.name;
         write!(s, r#"    <option name="{name}" value=""#).unwrap();
@@ -58,7 +58,7 @@ fn generate(s: &mut String, scheme: &ColorScheme) {
         }
         writeln!(s, r#""/>"#).unwrap();
     }
-    writeln!(s, "  </color>").unwrap();
+    writeln!(s, "  </colors>").unwrap();
 
     writeln!(s, "  <attributes>").unwrap();
     for attr in &scheme.idea_attributes {
