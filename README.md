@@ -11,4 +11,4 @@ Light and dark color schemes for some applications:
 
 ## Preview
 
-See: [CandyPaperPreview.ipynb](CandyPaperPreview.ipynb)
+See: [CandyPaperPreview.html](CandyPaperPreview.html)
