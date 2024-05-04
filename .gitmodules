@@ -7,6 +7,3 @@
 [submodule "CandyPaper.mintty"]
 	path = CandyPaper.mintty
 	url = https://github.com/dfxyz/CandyPaper.mintty
-[submodule "CandyPaper.vscode"]
-	path = CandyPaper.vscode
-	url = https://github.com/dfxyz/CandyPaper.vscode.git
