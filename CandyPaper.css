@@ -1,6 +1,7 @@
-@media (prefers-color-scheme: light) {
-    body { color: #406080; background: #F2FFE6; }
+body {
+    color: #406080;
+    background-color: #F2FFE6;
 }
-@media (prefers-color-scheme: dark) {
-    body { color: #95A6A6; background: #1F261F; }
+::selection {
+    background-color: #CEF2AA;
 }
