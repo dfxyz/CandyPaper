@@ -43,26 +43,13 @@ def vim():
 set bg=light
 hi clear
 let g:colors_name = "CandyPaper"
+let g:terminal_ansi_colors = [
+    \\ "{scheme.black.hex()}", "{scheme.red.hex()}", "{scheme.green.hex()}", "{scheme.yellow.hex()}",
+    \\ "{scheme.blue.hex()}", "{scheme.pink.hex()}", "{scheme.cyan.hex()}", "{scheme.white.hex()}",
+    \\ "{scheme.bright_black.hex()}", "{scheme.bright_red.hex()}", "{scheme.bright_green.hex()}", "{scheme.bright_yellow.hex()}",
+    \\ "{scheme.bright_blue.hex()}", "{scheme.bright_pink.hex()}", "{scheme.bright_cyan.hex()}", "{scheme.bright_white.hex()}"]
 
 """)
-        f.write("\n")
-        f.write("let g:terminal_ansi_colors = [\n")
-        f.write(f'   \\ "{scheme.black.hex()}", ')
-        f.write(f'"{scheme.red.hex()}", ')
-        f.write(f'"{scheme.green.hex()}", ')
-        f.write(f'"{scheme.yellow.hex()}", ')
-        f.write(f'"{scheme.blue.hex()}", ')
-        f.write(f'"{scheme.pink.hex()}", ')
-        f.write(f'"{scheme.cyan.hex()}", ')
-        f.write(f'"{scheme.white.hex()}",\n')
-        f.write(f'   \\ "{scheme.bright_black.hex()}", ')
-        f.write(f'"{scheme.bright_red.hex()}", ')
-        f.write(f'"{scheme.bright_green.hex()}", ')
-        f.write(f'"{scheme.bright_yellow.hex()}", ')
-        f.write(f'"{scheme.bright_blue.hex()}", ')
-        f.write(f'"{scheme.bright_pink.hex()}", ')
-        f.write(f'"{scheme.bright_cyan.hex()}", ')
-        f.write(f'"{scheme.bright_white.hex()}"]\n\n')
 
         for group in VimGroup.all:
             f.write(group.vim_command())
