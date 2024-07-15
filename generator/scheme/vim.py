@@ -3,6 +3,7 @@ from typing import Optional
 from . import jetbrains
 from . import *
 
+
 class VimGroup:
     all = list()
 
@@ -29,12 +30,13 @@ class VimGroup:
         return s
 
 
-def g(name: str, fg: Optional[Color] = None, bg: Optional[Color] = None, gui: str = "") -> VimGroup:
+def g(name: str, fg: Optional[Color] = None, bg: Optional[Color] = None, gui: str = ""):
     x = VimGroup(name, fg, bg, gui)
     VimGroup.all.append(x)
-    return x
+
 
 g("Normal", fg=jetbrains.text.fg, bg=jetbrains.text.bg)
+g("Terminal", fg=jetbrains.text.fg, bg=jetbrains.text.bg)
 
 g("Comment", fg=jetbrains.line_comment.fg)
 
