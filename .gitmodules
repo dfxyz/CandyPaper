@@ -1,3 +1,3 @@
 [submodule "CandyPaper.vim"]
-	path = CandyPaper.vim
-	url = https://github.com/dfxyz/CandyPaper.vim
+	path = dist/CandyPaper.vim
+	url = git@github.com:dfxyz/CandyPaper.vim.git
