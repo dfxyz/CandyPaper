@@ -1,0 +1,21 @@
+{
+  "fmt": {
+    "lineWidth": 120,
+    "singleQuote": true
+  },
+  "tasks": {
+    "generate": "deno run -RW src/generate.ts",
+    "diff": "deno run -ER src/jetbrains/diff.ts",
+    "colorTable": "deno serve -R --watch src/preview/colorTable.ts",
+    "fgAndBg": "deno serve -R --watch src/preview/fgAndBg.ts",
+    "customFgAndBg": "deno serve -R --watch src/preview/customFgAndBg.ts",
+    "gutter": "deno serve -R --watch src/preview/gutter.ts",
+    "stripe": "deno serve -R --watch src/preview/stripe.ts"
+  },
+  "imports": {
+    "@types/ejs": "npm:@types/ejs@^3.1.5",
+    "@types/xml2js": "npm:@types/xml2js@^0.4.14",
+    "ejs": "npm:ejs@^3.1.10",
+    "xml2js": "npm:xml2js@^0.6.2"
+  }
+}

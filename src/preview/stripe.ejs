@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <title>Preview Gutters</title>
+  <meta charset="UTF-8">
+  <style>
+    div {
+      font-family: 'Fira Code', sans-serif;
+      color: #<%= defaultFg.hex %>;
+      background-color: #<%= defaultBg.hex %>;
+      display: flex;
+      align-items: center;
+    }
+    span {
+      padding-top: 0.5em;
+      padding-bottom: 0.5em;
+    }
+    svg {
+      margin-left: auto;
+    }
+  </style>
+</head>
+<body>
+<h1>Preview Gutters</h1>
+<%_ for (const item of stripes) { _%>
+  <%_ const color = item.color; _%>
+  <div>
+    <span>
+      #<%= color.hex %>
+      HSV(<%= color.hsv %>)
+      RGB(<%= color.rgb %>)
+      Contrast Ratio(<%= color.contrastRatio(defaultBg) %>)
+    </span>
+    <svg width="15" height="3">
+      <rect x="0" y="0" width="15" height="3" fill="#<%= color.hex %>"/>
+    </svg>
+  </div>
+<%_ } _%>
+</body>
+</html>

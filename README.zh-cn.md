@@ -1,14 +1,14 @@
 # Candy Paper
 
-A light color scheme with the following features:
-* Use olive green background (#F2FFE6) to reduce eye strain
-* No bold or italic font styles are used unless necessary, better suited for coding with mixed ASCII and CJK characters
+一套浅色背景的配色方案，主要有以下特征：
+* 使用橄榄绿色的背景（#F2FFE6）来减少眼部疲劳
+* 除了某些特殊情况之外，基本不使用粗体字与斜体字，更适合中英文混排的编码场景
 
-Following software are supported for generating full color scheme files:
-* JetBrains IDEs
-* Vim (https://github.com/dfxyz/CandyPaper.vim)
+目前支持对下列软件生成完整的配色方案文件：
+* JetBrains全家桶
+* Vim（https://github.com/dfxyz/CandyPaper.vim）
 
-## Preview
+## 预览
 
 ![Example1](https://raw.githubusercontent.com/dfxyz/CandyPaper/master/screenshots/jetbrains1.png)
 
