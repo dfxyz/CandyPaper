@@ -15,7 +15,7 @@ import {
 import settings from './settings.ts';
 import {colors} from "../colors.ts";
 
-export default async function generate() {
+export default async function() {
   const scheme = await Scheme.fromXmlFile(path.join(import.meta.dirname!, 'baseScheme.icls'));
   for (const [key, value] of Object.entries(settings)) {
     if (value === NO_COLOR) {

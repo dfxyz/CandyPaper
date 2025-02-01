@@ -1,18 +1,17 @@
 import jetbrainsGenerate from './jetbrains/generate.ts';
 import vimGenerate from './vim/generate.ts';
+import windowsTerminalGenerate from './windowsTerminal/generate.ts';
 
-try {
-  await jetbrainsGenerate();
-} catch (e) {
-  console.error(`failed to generate JetBrains scheme: ${e}`);
-  Deno.exit(1);
+async function generate(fn: () => Promise<void>, name: string) {
+  try {
+    await fn();
+  } catch (e) {
+    console.error(`failed to generate ${name} scheme: ${e}`);
+    Deno.exit(1);
+  }
 }
 
-try {
-  await vimGenerate();
-} catch (e) {
-  console.error(`failed to generate Vim scheme: ${e}`);
-  Deno.exit(1);
-}
-
+await generate(jetbrainsGenerate, 'JetBrains');
+await generate(vimGenerate, 'Vim');
+await generate(windowsTerminalGenerate, 'Windows Terminal');
 Deno.exit(0);

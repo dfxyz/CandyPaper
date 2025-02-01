@@ -4,9 +4,12 @@ A light color scheme with the following features:
 * Use olive green background (#F2FFE6) to reduce eye strain
 * No bold or italic font styles are used unless necessary, better suited for coding with mixed ASCII and CJK characters
 
-Following software are supported for generating full color scheme files:
+Following applications are supported for generating full color scheme files:
 * JetBrains IDEs
 * Vim (https://github.com/dfxyz/CandyPaper.vim)
+
+Following applications are supported for generating color scheme configuration snippets:
+* Windows Terminal
 
 ## Preview
 
