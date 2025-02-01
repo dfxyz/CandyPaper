@@ -8,6 +8,9 @@
 * JetBrains全家桶
 * Vim（https://github.com/dfxyz/CandyPaper.vim）
 
+此外支持对下列软件生成配色方案的配置片段：
+* Windows Terminal
+
 ## 预览
 
 ![Example1](https://raw.githubusercontent.com/dfxyz/CandyPaper/master/screenshots/jetbrains1.png)

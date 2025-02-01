@@ -91,7 +91,7 @@ export default class Color {
     return [this.h, this.s, this.v];
   }
 
-  get BgrNumber(): number {
+  get bgrNumber(): number {
     return this.r + (this.g << 8) + (this.b << 16);
   }
 

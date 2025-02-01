@@ -21,7 +21,7 @@ interface VimGroup {
   gui?: string;
 }
 
-export default async function generate() {
+export default async function() {
   const ansiColors: Color[] = [];
   for (const colorName of rawAnsiColors) {
     const color = colors.get(colorName);
