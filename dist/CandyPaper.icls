@@ -820,6 +820,11 @@
         <option name="FOREGROUND" value="0066cc"/>
       </value>
     </option>
+    <option name="DART_CONSTRUCTOR">
+      <value>
+        <option name="FOREGROUND" value="2929cc"/>
+      </value>
+    </option>
     <option name="DART_ENUM_CONSTANT">
       <value>
         <option name="FOREGROUND" value="bf30bf"/>
@@ -1148,6 +1153,11 @@
       </value>
     </option>
     <option name="org.rust.DOC_CODE" baseAttributes="1"/>
+    <option name="org.rust.FORMAT_SPECIFIER">
+      <value>
+        <option name="FOREGROUND" value="406080"/>
+      </value>
+    </option>
     <option name="org.rust.LIFETIME">
       <value>
         <option name="FOREGROUND" value="007373"/>
