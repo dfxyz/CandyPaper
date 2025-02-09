@@ -3,9 +3,13 @@ import { AttributeKey, EffectType, FontType, GENERATE_PATH, Scheme } from './com
 import Color from '../Color.ts';
 import { hex2ColorNames } from '../colors.ts';
 
-const appData = Deno.env.get('APPDATA');
+let appData = Deno.env.get('APPDATA');
 if (appData === undefined) {
-  throw new Error(`environment variable 'APPDATA' is not set`);
+  const home = Deno.env.get('HOME');
+  if (home === undefined) {
+    throw new Error(`environment variable 'HOME' is not set`);
+  }
+  appData = `${home}/.config`;
 }
 const ide = Deno.env.get('IDE') ?? 'rust';
 

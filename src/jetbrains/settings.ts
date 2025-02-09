@@ -479,6 +479,9 @@ const settings: Record<string, SettingValue> = {
   //#endregion
 
   //#region Dart
+  DART_CONSTRUCTOR: {
+    FOREGROUND: 'fg.类名',
+  },
   DART_ENUM_CONSTANT: {
     FOREGROUND: 'fg.静态属性',
   },
@@ -771,6 +774,9 @@ const settings: Record<string, SettingValue> = {
     FOREGROUND: 'fg.未使用代码',
   },
   'org.rust.DOC_CODE': INHERIT_ATTRIBUTE,
+  'org.rust.FORMAT_SPECIFIER': {
+    FOREGROUND: 'fg.默认',
+  },
   'org.rust.LIFETIME': {
     FOREGROUND: 'fg.RUST生命周期',
   },
