@@ -23,6 +23,8 @@ export default async function () {
     fg: getOrThrowError('fg.默认'),
     bg: getOrThrowError('bg.默认'),
     selectionBg: getOrThrowError('bg.选中文本'),
+    activePathBg: getOrThrowError('bg.TC_活动地址栏'),
+    inactivePathBg: getOrThrowError('bg.TC_非活动地址栏'),
   };
   const content = await ejs.renderFile(path.join(import.meta.dirname!, 'template.ejs'), params);
   await Deno.writeTextFile(GENERATE_PATH, content);
