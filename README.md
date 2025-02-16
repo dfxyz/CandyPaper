@@ -10,6 +10,7 @@ Following applications are supported for generating full color scheme files:
 
 Following applications are supported for generating color scheme configuration snippets:
 * Windows Terminal
+* VSCode
 
 ## Preview
 

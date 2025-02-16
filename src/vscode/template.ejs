@@ -1,0 +1,40 @@
+{
+  "workbench.colorCustomizations": {
+  <%_ for (const [k, v] of Object.entries(colorCustomizations)) { _%>
+    "<%= k %>": "<%= v %>",
+  <%_ } _%>
+  },
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+    <%_ for (const [colorHex, scopes] of Object.entries(tokenColorScopes)) { _%>
+      {
+        "scope": [
+        <%_ for (const scope of scopes) { _%>
+          "<%= scope %>",
+        <%_ } _%>
+        ],
+        "settings": {
+          "foreground": "<%= colorHex %>"
+        },
+      },
+    <%_ } _%>
+    <%_ for (const [scope, setting] of Object.entries(tokenScopeSettings)) { _%>
+      {
+        "scope": "<%= scope %>",
+        "settings": {
+          <%_ for (const [k, v] of Object.entries(setting)) { _%>
+          "<%= k %>": "<%= v %>",
+          <%_ } _%>
+        },
+      },
+    <%_ } _%>
+    ]
+  },
+  "editor.semanticTokenColorCustomizations": {
+    "rules": {
+      <%_ for (const [k, v] of Object.entries(semanticTokenColorCustomizations)) { _%>
+      "<%= k %>": "<%= v %>",
+      <%_ } _%>
+    },
+  },
+}
