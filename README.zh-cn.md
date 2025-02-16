@@ -10,6 +10,7 @@
 
 此外支持对下列软件生成配色方案的配置片段：
 * Windows Terminal
+* VSCode
 
 ## 预览
 
