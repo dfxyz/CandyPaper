@@ -138,6 +138,7 @@
       {
         "scope": [
           "constant.language",
+          "variable.language",
           "entity.name.tag",
           "entity.name.selector",
           "entity.other.attribute-name.class.css",

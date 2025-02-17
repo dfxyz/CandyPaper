@@ -108,6 +108,7 @@ export const tokenColorScopes: Record<string, string[]> = {
   ],
   'fg.绿': [
     "constant.language",
+    "variable.language",
     "entity.name.tag",
     "entity.name.selector",
     "entity.other.attribute-name.class.css",
