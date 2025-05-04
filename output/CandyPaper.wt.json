@@ -1,0 +1,23 @@
+{
+  "name": "Candy Paper",
+  "foreground": "#406080",
+  "background": "#f2ffe6",
+  "cursorColor": "#406080",
+  "selectionBackground": "#cef2aa",
+  "black": "#406080",
+  "brightBlack": "#406080",
+  "white": "#6090c0",
+  "brightWhite": "#6090c0",
+  "red": "#e61818",
+  "brightRed": "#e61818",
+  "yellow": "#806000",
+  "brightYellow": "#806000",
+  "green": "#008020",
+  "brightGreen": "#008020",
+  "cyan": "#007272",
+  "brightCyan": "#007272",
+  "blue": "#2828cc",
+  "brightBlue": "#2828cc",
+  "purple": "#c030c0",
+  "brightPurple": "#c030c0"
+}

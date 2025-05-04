@@ -1,61 +1,61 @@
-<scheme name="Light" version="142" parent_scheme="Default">
+<scheme>
   <colors>
-    <option name="ADDED_LINES_COLOR" value="7fc784" />
-    <option name="ANNOTATIONS_COLOR" value="5a5d6b" />
-    <option name="ANNOTATIONS_LAST_COMMIT_COLOR" value="0" />
-    <option name="CARET_ROW_COLOR" value="f5f8fe" />
-    <option name="DELETED_LINES_COLOR" value="767a8a" />
-    <option name="DIFF_SEPARATORS_BACKGROUND" value="e4e6eb" />
-    <option name="DOCUMENTATION_COLOR" value="ffffff" />
-    <option name="ERROR_HINT" value="ffe8e8" />
-    <option name="FILESTATUS_ADDED" value="67d17" />
-    <option name="FILESTATUS_COPIED" value="67d17" />
-    <option name="FILESTATUS_DELETED" value="6c707e" />
-    <option name="FILESTATUS_IDEA_FILESTATUS_DELETED_FROM_FILE_SYSTEM" value="6c707e" />
-    <option name="FILESTATUS_IDEA_FILESTATUS_IGNORED" value="8c4f00" />
-    <option name="FILESTATUS_IDEA_FILESTATUS_MERGED_WITH_BOTH_CONFLICTS" value="de1b2e" />
-    <option name="FILESTATUS_IDEA_FILESTATUS_MERGED_WITH_CONFLICTS" value="de1b2e" />
-    <option name="FILESTATUS_IDEA_FILESTATUS_MERGED_WITH_PROPERTY_CONFLICTS" value="de1b2e" />
-    <option name="FILESTATUS_MERGED" value="643cb8" />
-    <option name="FILESTATUS_MODIFIED" value="33b3" />
-    <option name="FILESTATUS_NOT_CHANGED_IMMEDIATE" value="33b3" />
-    <option name="FILESTATUS_NOT_CHANGED_RECURSIVE" value="33b3" />
-    <option name="FILESTATUS_RENAMED" value="33b3" />
-    <option name="FILESTATUS_UNKNOWN" value="b23247" />
-    <option name="FILESTATUS_addedOutside" value="67d17" />
-    <option name="FILESTATUS_changelistConflict" value="de1b2e" />
-    <option name="FILESTATUS_modifiedOutside" value="33b3" />
-    <option name="GUTTER_BACKGROUND" value="ffffff" />
-    <option name="IGNORED_ADDED_LINES_BORDER_COLOR" value="7fc784" />
-    <option name="IGNORED_DELETED_LINES_BORDER_COLOR" value="767a8a" />
-    <option name="IGNORED_MODIFIED_LINES_BORDER_COLOR" value="88adf7" />
-    <option name="INDENT_GUIDE" value="ebecf0" />
-    <option name="INFORMATION_HINT" value="ffffff" />
-    <option name="LINE_NUMBERS_COLOR" value="aeb3c2" />
-    <option name="LINE_NUMBER_ON_CARET_ROW_COLOR" value="767a8a" />
-    <option name="LOOKUP_COLOR" value="ffffff" />
-    <option name="MATCHED_BRACES_INDENT_GUIDE_COLOR" value="62b3b3" />
-    <option name="METHOD_SEPARATORS_COLOR" value="dfe1e5" />
-    <option name="MODIFIED_LINES_COLOR" value="88adf7" />
-    <option name="NOTIFICATION_BACKGROUND" value="fff8e3" />
-    <option name="PROMOTION_PANE" value="e7effd" />
-    <option name="QUESTION_HINT" value="f5f8fe" />
-    <option name="RECENT_LOCATIONS_SELECTION" value="e7effd" />
-    <option name="RIGHT_MARGIN_COLOR" value="ebecf0" />
-    <option name="SELECTED_INDENT_GUIDE" value="aeb3c2" />
-    <option name="SELECTION_BACKGROUND" value="a6d2ff" />
+    <option name="ADDED_LINES_COLOR" value="7FC784" />
+    <option name="ANNOTATIONS_COLOR" value="5A5D6B" />
+    <option name="ANNOTATIONS_LAST_COMMIT_COLOR" value="000000" />
+    <option name="CARET_ROW_COLOR" value="F5F8FE" />
+    <option name="DELETED_LINES_COLOR" value="767A8A" />
+    <option name="DIFF_SEPARATORS_BACKGROUND" value="E4E6EB" />
+    <option name="DOCUMENTATION_COLOR" value="FFFFFF" />
+    <option name="ERROR_HINT" value="FFE8E8" />
+    <option name="FILESTATUS_ADDED" value="067D17" />
+    <option name="FILESTATUS_COPIED" value="067D17" />
+    <option name="FILESTATUS_DELETED" value="6C707E" />
+    <option name="FILESTATUS_IDEA_FILESTATUS_DELETED_FROM_FILE_SYSTEM" value="6C707E" />
+    <option name="FILESTATUS_IDEA_FILESTATUS_IGNORED" value="8C4F00" />
+    <option name="FILESTATUS_IDEA_FILESTATUS_MERGED_WITH_BOTH_CONFLICTS" value="DE1B2E" />
+    <option name="FILESTATUS_IDEA_FILESTATUS_MERGED_WITH_CONFLICTS" value="DE1B2E" />
+    <option name="FILESTATUS_IDEA_FILESTATUS_MERGED_WITH_PROPERTY_CONFLICTS" value="DE1B2E" />
+    <option name="FILESTATUS_MERGED" value="643CB8" />
+    <option name="FILESTATUS_MODIFIED" value="0033B3" />
+    <option name="FILESTATUS_NOT_CHANGED_IMMEDIATE" value="0033B3" />
+    <option name="FILESTATUS_NOT_CHANGED_RECURSIVE" value="0033B3" />
+    <option name="FILESTATUS_RENAMED" value="0033B3" />
+    <option name="FILESTATUS_UNKNOWN" value="B23247" />
+    <option name="FILESTATUS_addedOutside" value="067D17" />
+    <option name="FILESTATUS_changelistConflict" value="DE1B2E" />
+    <option name="FILESTATUS_modifiedOutside" value="0033B3" />
+    <option name="GUTTER_BACKGROUND" value="FFFFFF" />
+    <option name="IGNORED_ADDED_LINES_BORDER_COLOR" value="7FC784" />
+    <option name="IGNORED_DELETED_LINES_BORDER_COLOR" value="767A8A" />
+    <option name="IGNORED_MODIFIED_LINES_BORDER_COLOR" value="88ADF7" />
+    <option name="INDENT_GUIDE" value="EBECF0" />
+    <option name="INFORMATION_HINT" value="FFFFFF" />
+    <option name="LINE_NUMBERS_COLOR" value="AEB3C2" />
+    <option name="LINE_NUMBER_ON_CARET_ROW_COLOR" value="767A8A" />
+    <option name="LOOKUP_COLOR" value="FFFFFF" />
+    <option name="MATCHED_BRACES_INDENT_GUIDE_COLOR" value="62B3B3" />
+    <option name="METHOD_SEPARATORS_COLOR" value="DFE1E5" />
+    <option name="MODIFIED_LINES_COLOR" value="88ADF7" />
+    <option name="NOTIFICATION_BACKGROUND" value="FFF8E3" />
+    <option name="PROMOTION_PANE" value="E7EFFD" />
+    <option name="QUESTION_HINT" value="F5F8FE" />
+    <option name="RECENT_LOCATIONS_SELECTION" value="E7EFFD" />
+    <option name="RIGHT_MARGIN_COLOR" value="EBECF0" />
+    <option name="SELECTED_INDENT_GUIDE" value="AEB3C2" />
+    <option name="SELECTION_BACKGROUND" value="A6D2FF" />
     <option name="SELECTION_FOREGROUND" value="" />
-    <option name="TEARLINE_COLOR" value="d4d4d4" />
-    <option name="VCS_ANNOTATIONS_COLOR_1" value="a1bef7" />
-    <option name="VCS_ANNOTATIONS_COLOR_2" value="c9dafb" />
-    <option name="VCS_ANNOTATIONS_COLOR_3" value="dee8fc" />
-    <option name="VCS_ANNOTATIONS_COLOR_4" value="edf2fa" />
-    <option name="VCS_ANNOTATIONS_COLOR_5" value="f7f8fa" />
-    <option name="VISUAL_INDENT_GUIDE" value="dae6fd" />
-    <option name="WHITESPACES_MODIFIED_LINES_COLOR" value="f7e2cb" />
+    <option name="TEARLINE_COLOR" value="D4D4D4" />
+    <option name="VCS_ANNOTATIONS_COLOR_1" value="A1BEF7" />
+    <option name="VCS_ANNOTATIONS_COLOR_2" value="C9DAFB" />
+    <option name="VCS_ANNOTATIONS_COLOR_3" value="DEE8FC" />
+    <option name="VCS_ANNOTATIONS_COLOR_4" value="EDF2FA" />
+    <option name="VCS_ANNOTATIONS_COLOR_5" value="F7F8FA" />
+    <option name="VISUAL_INDENT_GUIDE" value="DAE6FD" />
+    <option name="WHITESPACES_MODIFIED_LINES_COLOR" value="F7E2CB" />
   </colors>
   <attributes>
-    <option name="ANNOTATION_NAME_ATTRIBUTES" baseAttributes="" />
+    <option name="ANNOTATION_NAME_ATTRIBUTES" baseAttributes="DEFAULT_METADATA" />
     <option name="BREADCRUMBS_CURRENT">
       <value>
         <option name="FOREGROUND" value="0" />
@@ -348,6 +348,7 @@
         <option name="FOREGROUND" value="336ecc" />
       </value>
     </option>
+    <option name="GROOVY_KEYWORD" baseAttributes="JAVA_KEYWORD" />
     <option name="HYPERLINK_ATTRIBUTES">
       <value>
         <option name="FOREGROUND" value="6dcc" />
@@ -366,7 +367,7 @@
         <option name="FOREGROUND" value="851691" />
       </value>
     </option>
-    <option name="INSTANCE_FIELD_ATTRIBUTES" baseAttributes="" />
+    <option name="INSTANCE_FIELD_ATTRIBUTES" baseAttributes="DEFAULT_INSTANCE_FIELD" />
     <option name="JS.GLOBAL_VARIABLE">
       <value>
         <option name="FOREGROUND" value="830091" />
@@ -397,11 +398,6 @@
         <option name="BACKGROUND" value="93d9d9" />
       </value>
     </option>
-    <option name="MATCHED_TAG_NAME">
-      <value>
-        <option name="BACKGROUND" value="c9ecec" />
-      </value>
-    </option>
     <option name="NG.SIGNAL">
       <value>
         <option name="FOREGROUND" value="7ebd" />
@@ -417,13 +413,8 @@
         <option name="FOREGROUND" value="8080" />
       </value>
     </option>
-    <option name="STATIC_FIELD_ATTRIBUTES" baseAttributes="" />
-    <option name="STATIC_FINAL_FIELD_ATTRIBUTES" baseAttributes="" />
-    <option name="STATIC_METHOD_ATTRIBUTES">
-      <value>
-        <option name="FONT_TYPE" value="2" />
-      </value>
-    </option>
+    <option name="STATIC_FIELD_ATTRIBUTES" baseAttributes="DEFAULT_STATIC_FIELD" />
+    <option name="STATIC_FINAL_FIELD_ATTRIBUTES" baseAttributes="STATIC_FIELD_ATTRIBUTES" />
     <option name="TEMPLATE_VARIABLE_ATTRIBUTES">
       <value>
         <option name="FOREGROUND" value="7f0000" />
@@ -471,11 +462,6 @@
     <option name="WRONG_REFERENCES_ATTRIBUTES">
       <value>
         <option name="FOREGROUND" value="f50000" />
-      </value>
-    </option>
-    <option name="XML_CUSTOM_TAG_NAME">
-      <value>
-        <option name="FOREGROUND" value="8077" />
       </value>
     </option>
     <option name="XPATH.FUNCTION">

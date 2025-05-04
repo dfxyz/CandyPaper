@@ -1,121 +1,136 @@
-// noinspection NonAsciiCharacters
+export const basic = {
+  /** RGB=[64,96,128], HSV=[210,50,50] */
+  blueBlack: '#406080',
+  /** RGB=[32,48,64], HSV=[210,50,25] */
+  darkBlueBlack: '#203040',
+  /** RGB=[96,144,192], HSV=[210,50,75] */
+  brightBlueBlack: '#6090c0',
+  /** RGB=[172,182,192], HSV=[210,10,75] */
+  blueGrey: '#acb6c0',
+  /** RGB=[154,46,46], HSV=[0,70,60] */
+  darkRed: '#9a2e2e',
+  /** RGB=[230,24,24], HSV=[0,90,90] */
+  red: '#e61818',
+  /** RGB=[192,84,48], HSV=[15,75,75] */
+  orange: '#c05430',
+  /** RGB=[128,96,0], HSV=[45,100,50] */
+  yellow: '#806000',
+  /** RGB=[86,114,0], HSV=[75,100,45] */
+  oliveGreen: '#567200',
+  /** RGB=[0,128,32], HSV=[135,100,50] */
+  green: '#008020',
+  /** RGB=[0,114,114], HSV=[180,100,45] */
+  cyan: '#007272',
+  /** RGB=[0,102,204], HSV=[210,100,80] */
+  lakeBlue: '#0066cc',
+  /** RGB=[40,40,204], HSV=[240,80,80] */
+  blue: '#2828cc',
+  /** RGB=[122,40,204], HSV=[270,80,80] */
+  purple: '#7a28cc',
+  /** RGB=[192,48,192], HSV=[300,75,75] */
+  pink: '#c030c0',
+};
 
-import Color from './Color.ts';
-import * as utils from './utils.ts';
+export const fg = {
+  default: basic.blueBlack,
+  lessImportant: basic.brightBlueBlack,
+  unimportant: basic.blueGrey,
+  searchMatchedText: basic.darkBlueBlack,
+  lineNumber: basic.blueGrey,
+  emphasizedLineNumber: basic.blueBlack,
+  foldedText: basic.brightBlueBlack,
 
-export const colors: Map<string, Color> = new Map();
-export const hex2ColorNames: Map<string, string[]> = new Map();
+  globalVariable: basic.darkRed,
+  constant: basic.darkRed,
+  literalConstant: basic.orange,
+  annotation: basic.yellow,
+  macro: basic.yellow,
+  specialComment: basic.yellow,
+  comment: basic.oliveGreen,
+  keyword: basic.green,
+  string: basic.cyan,
+  stringInterpolation: basic.blue,
+  hyperlink: basic.lakeBlue,
+  structLike: basic.blue,
+  label: basic.blue,
+  instanceProperty: basic.purple,
+  staticProperty: basic.pink,
+  tag: basic.green,
+  attributeKey: basic.purple,
+  markupHeading: basic.green,
 
-export interface ColorTableItem {
-  color: Color;
-  aliases: string[];
+  ansiBlack: basic.blueBlack,
+  ansiWhite: basic.brightBlueBlack,
+  ansiRed: basic.red,
+  ansiYellow: basic.yellow,
+  ansiGreen: basic.green,
+  ansiCyan: basic.cyan,
+  ansiBlue: basic.blue,
+  ansiMagenta: basic.pink,
+};
+
+export const bg = {
+  /** RGB=[242,255,230], HSV=[91,10,100] */
+  default: '#f2ffe6',
+  /** RGB=[230,255,236], HSV=[134,10,100] */
+  alternative: '#e6ffec',
+  /** RGB=[236,250,200], HSV=[77,20,98] */
+  cursorLine: '#ecfac8',
+  /** RGB=[180,255,180], HSV=[120,29,100] */
+  searchMatchedText: '#b4ffb4',
+  /** RGB=[206,242,170], HSV=[90,30,95] */
+  selectedText: '#cef2aa',
+  /** RGB=[218,242,218], HSV=[120,10,95] */
+  foldedText: '#daf2da',
+  /** RGB=[170,242,242], HSV=[180,30,95] */
+  matchedToken: '#aaf2f2',
+  /** RGB=[255,204,204], HSV=[0,20,100] */
+  error: '#ffcccc',
+  /** RGB=[255,230,154], HSV=[45,40,100] */
+  warning: '#ffe69a',
+  /** RGB=[255,255,102], HSV=[60,60,100] */
+  todo: '#ffff66',
+  /** RGB=[206,242,206], HSV=[120,15,95] */
+  addedText: '#cef2ce',
+  /** RGB=[206,224,242], HSV=[210,15,95] */
+  modifiedText: '#cee0f2',
+  /** RGB=[224,230,218], HSV=[90,5,90] */
+  removedText: '#e0e6da',
+};
+
+export const gutter = {
+  /** RGB=[102,204,102], HSV=[120,50,80] */
+  addedText: '#66cc66',
+  /** RGB=[128,192,255], HSV=[210,50,100] */
+  modifiedText: '#80c0ff',
+  /** RGB=[255,154,154], HSV=[0,40,100] */
+  removedText: '#ff9a9a',
+};
+
+export const stripe = {
+  /** RGB=[0,192,0], HSV=[120,100,75] */
+  searchMatchedText: '#00cc00',
+  /** RGB=[255,64,64], HSV=[0,75,100] */
+  error: '#ff4040',
+  /** RGB=[255,160,64], HSV=[30,75,100] */
+  warning: '#ffa040',
+  /** RGB=[255,224,128], HSV=[45,50,100] */
+  weakWarning: '#ffe080',
+  /** RGB=[134,192,148], HSV=[134,30,75] */
+  addedText: '#86c094',
+  /** RGB=[128,192,255], HSV=[210,50,100] */
+  modifiedText: '#80c0ff',
+  /** RGB=[180,128,255], HSV=[265,50,100] */
+  cursorIndentifierRead: '#b480ff',
+  /** RGB=[255,128,224], HSV=[315,50,100] */
+  cursorIndentifierWrite: '#ff80e0',
 }
 
-export const colorTable = _({
-  fg: {
-    '210,50,25': '文本搜索结果,VIM_WildMenu',
-    '210,50,50': '黑,默认,标识符',
-    '210,50,75': '白,折叠文本,未使用代码,过期日志,VIM_状态栏_未选中',
-    '210,10,75': '次要文本',
-    '0,75,60': '深红,全局变量,常量,宏参数,自定义关键字4',
-    '0,90,90': '红,未知符号,终端错误输出,日志_错误',
-    '15,75,75': '橙红,数字,标记语言实体',
-    '45,100,50': '黄,弱警告,特殊注释,注解,宏,日志_警告',
-    '75,100,45': '橄榄绿,注释',
-    '135,100,50': '绿,关键字,自定义关键字1,拼写错误,日志_信息,MARKDOWN标题,SHELL命令,内置函数名',
-    '180,100,45': '青,字符串,终端用户输入,日志_调试,RUST生命周期,重载操作符,正则表达式',
-    '210,100,80': '湖蓝,链接',
-    '240,80,80': '蓝,类名,转义字符,跳转标签,日志_冗余,泛型参数,VIM_特殊字符',
-    '270,80,80': '紫,已跟踪链接,成员属性,标记语言属性,自定义关键字2,参数名',
-    '300,75,75': '桃红,静态属性,自定义关键字3',
-  },
-  bg: {
-    '90,10,100': '默认',
-    '75,20,98': '当前行,光标下面包屑标签',
-    '90,30,95': '选中文本',
-    '120,10,95': '折叠文本',
-    '120,20,80': '带高亮的折叠文本',
-    '120,10,100': '自动类型转换',
-    '120,30,98': 'VCS注释背景1',
-    '120,20,98': 'VCS注释背景2,已选中面包屑标签,用IDE执行的命令,VIM_状态栏,TC_活动地址栏',
-    '120,10,98': 'VCS注释背景3',
-    '120,5,98': 'VCS注释背景4',
-    '120,2,98': 'VCS注释背景5',
-    '120,5,95': 'VIM_补全菜单',
-    '120,5,90': 'VIM_状态栏_未选中',
-    '120,10,75': 'VIM_补全菜单拖动条',
-    '180,30,95': '成对括号,成对标记',
-    '120,15,95': 'DIFF_新增文本',
-    '210,15,95': 'DIFF_改动文本',
-    '150,5,95': 'DIFF_改动文本_次要',
-    '15,15,95': 'DIFF_冲突文本',
-    '90,5,90': 'DIFF_移除文本',
-    '0,20,100': '错误,非成对括号,无效转义字符',
-    '45,40,100': '警告',
-    '60,60,100': '待办事项,VIM_WildMenu',
-    '135,10,100': '嵌入代码,模板语言',
-    '120,30,100': '文本搜索结果',
-    '240,20,100': '标识符搜索结果_读',
-    '300,20,100': '标识符搜索结果_写',
-    '240,10,100': '光标下标识符_读',
-    '330,10,100': '光标下标识符_写',
-    '30,10,100': 'RUST_UNSAFE',
-    '0,0,95': 'TC_非活动地址栏',
-  },
-  stripe: {
-    '210,50,25': '书签',
-    '210,75,100': '待办事项',
-    '120,100,75': '文本搜索结果',
-    '265,50,100': '光标下标识符_读',
-    '315,50,100': '光标下标识符_写',
-    '0,75,100': '错误',
-    '30,75,100': '警告',
-    '45,50,100': '弱警告',
-    '135,30,75': 'DIFF_新增文本',
-    '210,50,100': 'DIFF_改动文本',
-    '15,50,100': 'DIFF_冲突文本',
-    '0,0,75': 'DIFF_移除文本',
-  },
-  gutter: {
-    '120,50,80': '新增文本',
-    '210,50,100': '改动文本',
-    '0,40,100': '移除文本',
-    '45,100,100': '空白字符改动',
-  },
-  line: {
-    '120,10,90': '缩进对齐线,制表符,函数分隔线,DIFF_不变片段折叠线',
-    '120,10,80': '行宽对齐线',
-    '120,10,70': '光标下缩进对齐线',
-    '120,50,75': '光标下括号对应的缩进对齐线',
-  },
-});
-
-function _(raw: Record<string, Record<string, string>>): Record<string, Record<string, ColorTableItem>> {
-  const convertedColorTable: Record<string, Record<string, ColorTableItem>> = {};
-  function addColor(key: string, value: Color) {
-    if (colors.has(key)) {
-      throw new Error(`color '${key}' already defined`);
-    }
-    colors.set(key, value);
-  }
-  for (const [groupName, groupObjects] of Object.entries(raw)) {
-    const convertedGroupObjects: Record<string, ColorTableItem> = convertedColorTable[groupName] = {};
-    for (const [hsvString, aliasesString] of Object.entries(groupObjects)) {
-      const [h, s, v] = utils.parseHsvString(hsvString);
-      const color = Color.fromHSV(h, s, v);
-      const aliases = aliasesString.split(',').map((x) => x.trim()).filter((x) => x.length > 0);
-      convertedGroupObjects[hsvString] = { color, aliases };
-      for (const alias of aliases) {
-        const key = `${groupName}.${alias}`;
-        addColor(key, color);
-        let colorNames = hex2ColorNames.get(color.hex);
-        if (colorNames === undefined) {
-          colorNames = [];
-          hex2ColorNames.set(color.hex, colorNames);
-        }
-        colorNames.push(key);
-      }
-    }
-  }
-  return convertedColorTable;
-}
+export const guideLine = {
+  /** RGB=[184,204,184], HSV=[120,10,80] */
+  margin: '#b8ccb8',
+  /** RGB=[208,230,208], HSV=[120,10,90] */
+  indent: '#d0e6d0',
+  /** RGB=[160,180,160], HSV=[120,11,71] */
+  emphasizedIndent: '#a0b4a0',
+};

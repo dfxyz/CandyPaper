@@ -1,4 +1,5 @@
 " Name: Candy Paper
+" Version: 4.2.0
 " Author: DF_XYZ <dfxyz1@gmail.com>
 " License: MIT
 " Source: https://github.com/dfxyz/CandyPaper.vim
@@ -8,7 +9,7 @@ hi clear
 let g:colors_name = "CandyPaper"
 let g:terminal_ansi_colors = [
 <%_ for (const ansiColor of ansiColors) { _%>
-  \ "#<%= ansiColor.hex %>",
+  \ "<%= ansiColor %>",
 <%_ } _%>
   \]
 
@@ -16,10 +17,10 @@ let g:terminal_ansi_colors = [
 hi clear <%= name %>
 hi <%= name %>
   <%_ if (group.fg) { _%>
-  \ guifg=#<%= group.fg.hex %>
+  \ guifg=<%= group.fg %>
   <%_ } _%>
   <%_ if (group.bg) { _%>
-  \ guibg=#<%= group.bg.hex %>
+  \ guibg=<%= group.bg %>
   <%_ } _%>
   <%_ if (group.gui) { _%>
   \ gui=<%= group.gui %>
