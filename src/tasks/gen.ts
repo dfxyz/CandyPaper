@@ -1,5 +1,6 @@
 import ejs from 'ejs';
 import path from 'node:path';
+import childProcess from 'node:child_process';
 
 const outputDir = path.join(import.meta.dirname!, '..', '..', 'output');
 
@@ -36,6 +37,18 @@ async function generateForVSCode() {
     path.join(outputDir, 'CandyPaper.vsc', 'themes', 'CandyPaper.json'),
     JSON.stringify(module.default, null, 2),
   );
+
+  const packagePromise = new Promise<void>((resolve) => {
+    childProcess.exec('vsce package', {
+      cwd: path.join(outputDir, 'CandyPaper.vsc'),
+    }, (err) => {
+      if (err !== null) {
+        console.error(err);
+      }
+      resolve();
+    });
+  });
+  await packagePromise;
 }
 
 async function generateForWindowsTerminal() {

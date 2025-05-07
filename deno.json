@@ -4,7 +4,7 @@
     "singleQuote": true
   },
   "tasks": {
-    "gen": "deno run -RW src/tasks/gen.ts",
+    "gen": "deno run -A src/tasks/gen.ts",
     "conv": "deno run src/tasks/conv.ts",
     "annotate": "deno run -RW src/tasks/annotate.ts",
     "compare": "deno run -RW src/tasks/compare.ts"
