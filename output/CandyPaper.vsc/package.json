@@ -1,0 +1,24 @@
+{
+  "name": "candy-paper",
+  "displayName": "Candy Paper",
+  "description": "A light color theme.",
+  "version": "4.2.0",
+  "publisher": "dfxyz",
+  "license": "MIT",
+  "engines": { "vscode": "*" },
+  "categories": ["Themes"],
+  "contributes": {
+    "themes": [
+      {
+        "id": "Candy Paper",
+        "label": "Candy Paper",
+        "uiTheme": "vs",
+        "path": "./themes/CandyPaper.json"
+      }
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dfxyz/CandyPaper.git"
+  }
+}

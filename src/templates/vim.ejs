@@ -1,0 +1,28 @@
+" Name: Candy Paper
+" Version: 4.2.0
+" Author: DF_XYZ <dfxyz1@gmail.com>
+" License: MIT
+" Source: https://github.com/dfxyz/CandyPaper.vim
+
+set bg=light
+hi clear
+let g:colors_name = "CandyPaper"
+let g:terminal_ansi_colors = [
+<%_ for (const ansiColor of ansiColors) { _%>
+  \ "<%= ansiColor %>",
+<%_ } _%>
+  \]
+
+<%_ for (const [name, group] of Object.entries(groups)) { _%>
+hi clear <%= name %>
+hi <%= name %>
+  <%_ if (group.fg) { _%>
+  \ guifg=<%= group.fg %>
+  <%_ } _%>
+  <%_ if (group.bg) { _%>
+  \ guibg=<%= group.bg %>
+  <%_ } _%>
+  <%_ if (group.gui) { _%>
+  \ gui=<%= group.gui %>
+  <%_ } _%>
+<%_ } _%>

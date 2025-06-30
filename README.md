@@ -7,10 +7,11 @@ A light color scheme with the following features:
 Following applications are supported for generating full color scheme files:
 * JetBrains IDEs
 * Vim (https://github.com/dfxyz/CandyPaper.vim)
+* VSCode
 
 Following applications are supported for generating color scheme configuration snippets:
 * Windows Terminal
-* VSCode
+* Total Commander
 
 ## Preview
 

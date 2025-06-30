@@ -7,10 +7,11 @@
 目前支持对下列软件生成完整的配色方案文件：
 * JetBrains全家桶
 * Vim（https://github.com/dfxyz/CandyPaper.vim）
+* VSCode
 
 此外支持对下列软件生成配色方案的配置片段：
 * Windows Terminal
-* VSCode
+* Total Commander
 
 ## 预览
 

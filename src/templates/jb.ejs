@@ -1,0 +1,29 @@
+<scheme name="Candy Paper" parent_scheme="Default">
+  <colors>
+  <%_ for (const color of scheme.colors.values()) { _%>
+    <option name="<%= color.name %>" value="<%= color.value %>"/>
+  <%_ } _%>
+  </colors>
+  <attributes>
+  <%_ for (const attribute of scheme.attributes.values()) { _%>
+    <%_ if (attribute.inherit) { _%>
+    <option name="<%= attribute.name %>" baseAttributes="1"/>
+    <%_ } else { _%>
+    <option name="<%= attribute.name %>">
+      <%_ 
+      const options = attribute.toOptionMap();
+      if (options.size > 0) {
+      _%>
+      <value>
+        <%_ for (const [k, v] of options) { _%>
+        <option name="<%= k %>" value="<%= v %>"/>
+        <%_ } _%>
+      </value>
+      <%_ } else { _%>
+      <value/>
+      <%_ } _%>
+    </option>
+    <%_ } _%>
+  <%_ } _%>
+  </attributes>
+</scheme>

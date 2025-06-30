@@ -4,13 +4,10 @@
     "singleQuote": true
   },
   "tasks": {
-    "generate": "deno run -RW src/generate.ts",
-    "diff": "deno run -ER src/jetbrains/diff.ts",
-    "colorTable": "deno serve -R --watch src/preview/colorTable.ts",
-    "fgAndBg": "deno serve -R --watch src/preview/fgAndBg.ts",
-    "customFgAndBg": "deno serve -R --watch src/preview/customFgAndBg.ts",
-    "gutter": "deno serve -R --watch src/preview/gutter.ts",
-    "stripe": "deno serve -R --watch src/preview/stripe.ts"
+    "gen": "deno run -A src/tasks/gen.ts",
+    "conv": "deno run src/tasks/conv.ts",
+    "annotate": "deno run -RW src/tasks/annotate.ts",
+    "compare": "deno run -RW src/tasks/compare.ts"
   },
   "imports": {
     "@types/ejs": "npm:@types/ejs@^3.1.5",
