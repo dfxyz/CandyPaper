@@ -1,8 +1,8 @@
 import { basic, bg, fg, guideLine, gutter, stripe } from '../colors.ts';
 import baseSettings from '../base/vsc.json' with { type: 'json' };
 
-/** RGB=[48,48,48], HSV=[0,0,19] */
-const uiDefaultFg = '#303030';
+/** RGB=[32,32,32], HSV=[0,0,13] */
+const uiDefaultFg = '#202020';
 /** RGB=[64,128,0], HSV=[90,100,50] */
 const uiThemeGreen = '#408000';
 /** RGB=[224,242,206], HSV=[90,15,95] */
