@@ -40,6 +40,8 @@ const colors: JetbrainsColorSettingObject = {
   'DOC_COMMENT_LINK': fg.hyperlink,
   'DOC_COMMENT_GUIDE': guideLine.indent,
   'CONSOLE_BACKGROUND_KEY': bg.default,
+  'BLOCK_TERMINAL_DEFAULT_BACKGROUND': bg.default,
+  'BLOCK_TERMINAL_DEFAULT_FOREGROUND': fg.default,
   'DIFF_SEPARATOR_WAVE': guideLine.margin,
   'ANNOTATIONS_COLOR': fg.default,
   'ANNOTATIONS_LAST_COMMIT_COLOR': basic.darkBlueBlack,
@@ -283,6 +285,66 @@ const attributes: JetbrainsAttributeSettingObject = {
   },
   'CONSOLE_USER_INPUT': {
     'foreground': fg.string,
+  },
+  'BLOCK_TERMINAL_BLACK': {
+    "foreground": basic.blueBlack,
+  },
+  'BLOCK_TERMINAL_BLACK_BRIGHT': {
+    "foreground": basic.blueBlack,
+    "fontType": "1"
+  },
+  'BLOCK_TERMINAL_BLUE': {
+    "foreground": basic.blue,
+  },
+  'BLOCK_TERMINAL_BLUE_BRIGHT': {
+    "foreground": basic.blue,
+    "fontType": "1"
+  },
+  'BLOCK_TERMINAL_COMMAND': {
+    "foreground": basic.blueBlack,
+    "fontType": "1"
+  },
+  'BLOCK_TERMINAL_CYAN': {
+    "foreground": basic.cyan,
+  },
+  'BLOCK_TERMINAL_CYAN_BRIGHT': {
+    "foreground": basic.cyan,
+    "fontType": "1"
+  },
+  'BLOCK_TERMINAL_GREEN': {
+    "foreground": basic.green,
+  },
+  'BLOCK_TERMINAL_GREEN_BRIGHT': {
+    "foreground": basic.green,
+    "fontType": "1"
+  },
+  'BLOCK_TERMINAL_MAGENTA': {
+    "foreground": basic.pink,
+  },
+  'BLOCK_TERMINAL_MAGENTA_BRIGHT': {
+    "foreground": basic.pink,
+    "fontType": "1"
+  },
+  'BLOCK_TERMINAL_RED': {
+    "foreground": basic.red,
+  },
+  'BLOCK_TERMINAL_RED_BRIGHT': {
+    "foreground": basic.red,
+    "fontType": "1"
+  },
+  'BLOCK_TERMINAL_WHITE': {
+    "foreground": basic.brightBlueBlack,
+  },
+  'BLOCK_TERMINAL_WHITE_BRIGHT': {
+    "foreground": basic.brightBlueBlack,
+    "fontType": "1"
+  },
+  'BLOCK_TERMINAL_YELLOW': {
+    "foreground": basic.yellow,
+  },
+  'BLOCK_TERMINAL_YELLOW_BRIGHT': {
+    "foreground": basic.yellow,
+    "fontType": "1"
   },
   'TERMINAL_COMMAND_TO_RUN_USING_IDE': {
     /** RGB=[200,250,200], HSV=[120,20,98] */

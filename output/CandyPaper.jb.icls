@@ -62,6 +62,8 @@
     <option name="DOC_COMMENT_LINK" value="#0066cc"/>
     <option name="DOC_COMMENT_GUIDE" value="#d0e6d0"/>
     <option name="CONSOLE_BACKGROUND_KEY" value="#f2ffe6"/>
+    <option name="BLOCK_TERMINAL_DEFAULT_BACKGROUND" value="#f2ffe6"/>
+    <option name="BLOCK_TERMINAL_DEFAULT_FOREGROUND" value="#406080"/>
     <option name="DIFF_SEPARATOR_WAVE" value="#b8ccb8"/>
   </colors>
   <attributes>
@@ -588,6 +590,100 @@
     <option name="CONSOLE_USER_INPUT">
       <value>
         <option name="FOREGROUND" value="#007272"/>
+      </value>
+    </option>
+    <option name="BLOCK_TERMINAL_BLACK">
+      <value>
+        <option name="FOREGROUND" value="#406080"/>
+      </value>
+    </option>
+    <option name="BLOCK_TERMINAL_BLACK_BRIGHT">
+      <value>
+        <option name="FOREGROUND" value="#406080"/>
+        <option name="FONT_TYPE" value="1"/>
+      </value>
+    </option>
+    <option name="BLOCK_TERMINAL_BLUE">
+      <value>
+        <option name="FOREGROUND" value="#2828cc"/>
+      </value>
+    </option>
+    <option name="BLOCK_TERMINAL_BLUE_BRIGHT">
+      <value>
+        <option name="FOREGROUND" value="#2828cc"/>
+        <option name="FONT_TYPE" value="1"/>
+      </value>
+    </option>
+    <option name="BLOCK_TERMINAL_COMMAND">
+      <value>
+        <option name="FOREGROUND" value="#406080"/>
+        <option name="FONT_TYPE" value="1"/>
+      </value>
+    </option>
+    <option name="BLOCK_TERMINAL_CYAN">
+      <value>
+        <option name="FOREGROUND" value="#007272"/>
+      </value>
+    </option>
+    <option name="BLOCK_TERMINAL_CYAN_BRIGHT">
+      <value>
+        <option name="FOREGROUND" value="#007272"/>
+        <option name="FONT_TYPE" value="1"/>
+      </value>
+    </option>
+    <option name="BLOCK_TERMINAL_GREEN">
+      <value>
+        <option name="FOREGROUND" value="#008020"/>
+      </value>
+    </option>
+    <option name="BLOCK_TERMINAL_GREEN_BRIGHT">
+      <value>
+        <option name="FOREGROUND" value="#008020"/>
+        <option name="FONT_TYPE" value="1"/>
+      </value>
+    </option>
+    <option name="BLOCK_TERMINAL_MAGENTA">
+      <value>
+        <option name="FOREGROUND" value="#c030c0"/>
+      </value>
+    </option>
+    <option name="BLOCK_TERMINAL_MAGENTA_BRIGHT">
+      <value>
+        <option name="FOREGROUND" value="#c030c0"/>
+        <option name="FONT_TYPE" value="1"/>
+      </value>
+    </option>
+    <option name="BLOCK_TERMINAL_RED">
+      <value>
+        <option name="FOREGROUND" value="#e61818"/>
+      </value>
+    </option>
+    <option name="BLOCK_TERMINAL_RED_BRIGHT">
+      <value>
+        <option name="FOREGROUND" value="#e61818"/>
+        <option name="FONT_TYPE" value="1"/>
+      </value>
+    </option>
+    <option name="BLOCK_TERMINAL_WHITE">
+      <value>
+        <option name="FOREGROUND" value="#6090c0"/>
+      </value>
+    </option>
+    <option name="BLOCK_TERMINAL_WHITE_BRIGHT">
+      <value>
+        <option name="FOREGROUND" value="#6090c0"/>
+        <option name="FONT_TYPE" value="1"/>
+      </value>
+    </option>
+    <option name="BLOCK_TERMINAL_YELLOW">
+      <value>
+        <option name="FOREGROUND" value="#806000"/>
+      </value>
+    </option>
+    <option name="BLOCK_TERMINAL_YELLOW_BRIGHT">
+      <value>
+        <option name="FOREGROUND" value="#806000"/>
+        <option name="FONT_TYPE" value="1"/>
       </value>
     </option>
     <option name="TERMINAL_COMMAND_TO_RUN_USING_IDE">
