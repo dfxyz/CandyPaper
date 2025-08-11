@@ -8,6 +8,7 @@ const genFnMap = {
   generateForJetbrains,
   generateForVim,
   generateForVSCode,
+  generateForAlacritty,
   generateForWindowsTerminal,
   generateForTotalCmd,
 };
@@ -49,6 +50,14 @@ async function generateForVSCode() {
     });
   });
   await packagePromise;
+}
+
+async function generateForAlacritty() {
+  const {content} = await import('../settings/alacritty.ts');
+  await Deno.writeTextFile(
+    path.join(outputDir, 'CandyPaper.alacritty.toml'),
+    content,
+  );
 }
 
 async function generateForWindowsTerminal() {
