@@ -1,0 +1,35 @@
+[colors.primary]
+foreground = "#406080"
+background = "#f2ffe6"
+
+[colors.selection]
+foreground = "CellForeground"
+background = "#cef2aa"
+
+[colors.search.matches]
+foreground = "#203040"
+background = "#b4ffb4"
+
+[colors.search.focused_match]
+foreground = "#203040"
+background = "#ffecb4"
+
+[colors.normal]
+black = "#406080"
+red = "#e61818"
+green = "#008020"
+yellow = "#806000"
+blue = "#2828cc"
+purple = "#c030c0"
+cyan = "#007272"
+white = "#6090c0"
+
+[colors.bright]
+black = "#406080"
+red = "#e61818"
+green = "#008020"
+yellow = "#806000"
+blue = "#2828cc"
+purple = "#c030c0"
+cyan = "#007272"
+white = "#6090c0"
