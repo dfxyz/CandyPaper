@@ -9,6 +9,7 @@ const genFnMap = {
   generateForVim,
   generateForVSCode,
   generateForAlacritty,
+  generateForKonsole,
   generateForWindowsTerminal,
   generateForTotalCmd,
 };
@@ -56,6 +57,14 @@ async function generateForAlacritty() {
   const {content} = await import('../settings/alacritty.ts');
   await Deno.writeTextFile(
     path.join(outputDir, 'CandyPaper.alacritty.toml'),
+    content,
+  );
+}
+
+async function generateForKonsole() {
+  const {content} = await import('../settings/konsole.ts');
+  await Deno.writeTextFile(
+    path.join(outputDir, 'CandyPaper.konsole.colorscheme'),
     content,
   );
 }
