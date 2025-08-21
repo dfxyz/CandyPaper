@@ -1,8 +1,5 @@
 import { fg, bg } from '../colors.ts';
 
-/** RGB=[255,236,180], HSV=[45,29,100] */
-const focusedSearchMatchBg = '#ffecb4';
-
 export const content = `
 [colors.primary]
 foreground = "${fg.default}"
@@ -18,7 +15,7 @@ background = "${bg.searchMatchedText}"
 
 [colors.search.focused_match]
 foreground = "${fg.searchMatchedText}"
-background = "${focusedSearchMatchBg}"
+background = "${bg.currentSearchMatchedText}"
 
 [colors.normal]
 black = "${fg.ansiBlack}"

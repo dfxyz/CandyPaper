@@ -78,6 +78,8 @@ export const bg = {
   cursorLine: '#ecfac8',
   /** RGB=[180,255,180], HSV=[120,29,100] */
   searchMatchedText: '#b4ffb4',
+  /** RGB=[255,184,112], HSV=[30,56,100] */
+  currentSearchMatchedText: '#ffb870',
   /** RGB=[206,242,170], HSV=[90,30,95] */
   selectedText: '#cef2aa',
   /** RGB=[218,242,218], HSV=[120,10,95] */
@@ -108,7 +110,7 @@ export const gutter = {
 };
 
 export const stripe = {
-  /** RGB=[0,192,0], HSV=[120,100,75] */
+  /** RGB=[0,204,0], HSV=[120,100,80] */
   searchMatchedText: '#00cc00',
   /** RGB=[255,64,64], HSV=[0,75,100] */
   error: '#ff4040',

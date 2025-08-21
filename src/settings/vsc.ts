@@ -33,7 +33,7 @@ Object.assign(settings.colors, {
   'dropdown.foreground': uiDefaultFg,
   'editor.background': bg.default,
   'editor.foreground': fg.default,
-  'editor.findMatchBackground': bg.searchMatchedText,
+  'editor.findMatchBackground': bg.currentSearchMatchedText,
   'editor.findMatchForeground': fg.searchMatchedText,
   'editor.findMatchHighlightBackground': bg.searchMatchedText,
   'editor.findMatchHighlightForeground': fg.searchMatchedText,

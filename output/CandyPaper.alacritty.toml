@@ -12,7 +12,7 @@ background = "#b4ffb4"
 
 [colors.search.focused_match]
 foreground = "#203040"
-background = "#ffecb4"
+background = "#ffb870"
 
 [colors.normal]
 black = "#406080"

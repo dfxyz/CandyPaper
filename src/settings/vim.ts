@@ -252,6 +252,10 @@ export const groups: Record<string, VimGroup> = {
     fg: fg.searchMatchedText,
     bg: bg.searchMatchedText,
   },
+  CurSearch: {
+    fg: fg.searchMatchedText,
+    bg: bg.currentSearchMatchedText,
+  },
   SpecialKey: {
     fg: fg.literalConstant,
   },

@@ -151,7 +151,7 @@
     "titleBar.inactiveForeground": "#8b949e",
     "welcomePage.tileBackground": "#f3f3f3",
     "widget.border": "#e5e5e5",
-    "editor.findMatchBackground": "#b4ffb4",
+    "editor.findMatchBackground": "#ffb870",
     "editor.findMatchForeground": "#203040",
     "editor.findMatchHighlightBackground": "#b4ffb4",
     "editor.findMatchHighlightForeground": "#203040",
