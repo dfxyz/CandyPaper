@@ -1111,22 +1111,31 @@
         <option name="FOREGROUND" value="#c030c0"/>
       </value>
     </option>
+    <option name="org.rust.ASSOC_FUNCTION" baseAttributes="1"/>
+    <option name="org.rust.ASSOC_FUNCTION_CALL" baseAttributes="1"/>
+    <option name="org.rust.ASSOC_TRAIT_FUNCTION" baseAttributes="1"/>
+    <option name="org.rust.ASSOC_TRAIT_FUNCTION_CALL" baseAttributes="1"/>
     <option name="org.rust.CFG_DISABLED_CODE">
       <value>
         <option name="FOREGROUND" value="#6090c0"/>
       </value>
     </option>
+    <option name="org.rust.CRATE" baseAttributes="1"/>
     <option name="org.rust.DOC_CODE">
       <value>
         <option name="FOREGROUND" value="#406080"/>
         <option name="BACKGROUND" value="#e6ffec"/>
       </value>
     </option>
+    <option name="org.rust.ENUM" baseAttributes="1"/>
+    <option name="org.rust.ENUM_VARIANT" baseAttributes="1"/>
     <option name="org.rust.FORMAT_PARAMETER">
       <value>
         <option name="FOREGROUND" value="#2828cc"/>
       </value>
     </option>
+    <option name="org.rust.FUNCTION" baseAttributes="1"/>
+    <option name="org.rust.FUNCTION_CALL" baseAttributes="1"/>
     <option name="org.rust.LIFETIME">
       <value>
         <option name="FOREGROUND" value="#007272"/>
@@ -1137,16 +1146,45 @@
         <option name="FOREGROUND" value="#806000"/>
       </value>
     </option>
+    <option name="org.rust.MACRO_BINDING_IDENTIFIER">
+      <value>
+        <option name="FOREGROUND" value="#008020"/>
+      </value>
+    </option>
+    <option name="org.rust.METHOD" baseAttributes="1"/>
+    <option name="org.rust.METHOD_CALL" baseAttributes="1"/>
+    <option name="org.rust.MUT_BINDING">
+      <value>
+        <option name="EFFECT_COLOR" value="#406080"/>
+        <option name="EFFECT_TYPE" value="1"/>
+      </value>
+    </option>
+    <option name="org.rust.MUT_SELF_PARAMETER">
+      <value>
+        <option name="FOREGROUND" value="#008020"/>
+        <option name="EFFECT_COLOR" value="#406080"/>
+        <option name="EFFECT_TYPE" value="1"/>
+      </value>
+    </option>
+    <option name="org.rust.Q_OPERATOR" baseAttributes="1"/>
+    <option name="org.rust.SELF_EXPRESSION" baseAttributes="1"/>
+    <option name="org.rust.SELF_PARAMETER" baseAttributes="1"/>
+    <option name="org.rust.STRUCT" baseAttributes="1"/>
+    <option name="org.rust.TRAIT" baseAttributes="1"/>
+    <option name="org.rust.TRAIT_METHOD" baseAttributes="1"/>
+    <option name="org.rust.TRAIT_METHOD_CALL" baseAttributes="1"/>
     <option name="org.rust.STATIC">
       <value>
         <option name="FOREGROUND" value="#9a2e2e"/>
       </value>
     </option>
+    <option name="org.rust.TYPE_ALIAS" baseAttributes="1"/>
     <option name="org.rust.TYPE_PARAMETER">
       <value>
         <option name="FOREGROUND" value="#2828cc"/>
       </value>
     </option>
+    <option name="org.rust.UNION" baseAttributes="1"/>
     <option name="org.rust.UNSAFE_CODE">
       <value>
         <option name="BACKGROUND" value="#ffecd8"/>

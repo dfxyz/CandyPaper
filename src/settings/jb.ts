@@ -287,64 +287,64 @@ const attributes: JetbrainsAttributeSettingObject = {
     'foreground': fg.string,
   },
   'BLOCK_TERMINAL_BLACK': {
-    "foreground": basic.blueBlack,
+    'foreground': basic.blueBlack,
   },
   'BLOCK_TERMINAL_BLACK_BRIGHT': {
-    "foreground": basic.blueBlack,
-    "fontType": "1"
+    'foreground': basic.blueBlack,
+    'fontType': '1',
   },
   'BLOCK_TERMINAL_BLUE': {
-    "foreground": basic.blue,
+    'foreground': basic.blue,
   },
   'BLOCK_TERMINAL_BLUE_BRIGHT': {
-    "foreground": basic.blue,
-    "fontType": "1"
+    'foreground': basic.blue,
+    'fontType': '1',
   },
   'BLOCK_TERMINAL_COMMAND': {
-    "foreground": basic.blueBlack,
-    "fontType": "1"
+    'foreground': basic.blueBlack,
+    'fontType': '1',
   },
   'BLOCK_TERMINAL_CYAN': {
-    "foreground": basic.cyan,
+    'foreground': basic.cyan,
   },
   'BLOCK_TERMINAL_CYAN_BRIGHT': {
-    "foreground": basic.cyan,
-    "fontType": "1"
+    'foreground': basic.cyan,
+    'fontType': '1',
   },
   'BLOCK_TERMINAL_GREEN': {
-    "foreground": basic.green,
+    'foreground': basic.green,
   },
   'BLOCK_TERMINAL_GREEN_BRIGHT': {
-    "foreground": basic.green,
-    "fontType": "1"
+    'foreground': basic.green,
+    'fontType': '1',
   },
   'BLOCK_TERMINAL_MAGENTA': {
-    "foreground": basic.pink,
+    'foreground': basic.pink,
   },
   'BLOCK_TERMINAL_MAGENTA_BRIGHT': {
-    "foreground": basic.pink,
-    "fontType": "1"
+    'foreground': basic.pink,
+    'fontType': '1',
   },
   'BLOCK_TERMINAL_RED': {
-    "foreground": basic.red,
+    'foreground': basic.red,
   },
   'BLOCK_TERMINAL_RED_BRIGHT': {
-    "foreground": basic.red,
-    "fontType": "1"
+    'foreground': basic.red,
+    'fontType': '1',
   },
   'BLOCK_TERMINAL_WHITE': {
-    "foreground": basic.brightBlueBlack,
+    'foreground': basic.brightBlueBlack,
   },
   'BLOCK_TERMINAL_WHITE_BRIGHT': {
-    "foreground": basic.brightBlueBlack,
-    "fontType": "1"
+    'foreground': basic.brightBlueBlack,
+    'fontType': '1',
   },
   'BLOCK_TERMINAL_YELLOW': {
-    "foreground": basic.yellow,
+    'foreground': basic.yellow,
   },
   'BLOCK_TERMINAL_YELLOW_BRIGHT': {
-    "foreground": basic.yellow,
-    "fontType": "1"
+    'foreground': basic.yellow,
+    'fontType': '1',
   },
   'TERMINAL_COMMAND_TO_RUN_USING_IDE': {
     /** RGB=[200,250,200], HSV=[120,20,98] */
@@ -668,15 +668,42 @@ const attributes: JetbrainsAttributeSettingObject = {
   'PROTO_ENUM_VALUE': {
     'foreground': fg.staticProperty,
   },
+  'org.rust.ASSOC_FUNCTION': {
+    'inherit': true,
+  },
+  'org.rust.ASSOC_FUNCTION_CALL': {
+    'inherit': true,
+  },
+  'org.rust.ASSOC_TRAIT_FUNCTION': {
+    'inherit': true,
+  },
+  'org.rust.ASSOC_TRAIT_FUNCTION_CALL': {
+    'inherit': true,
+  },
   'org.rust.CFG_DISABLED_CODE': {
     'foreground': fg.lessImportant,
+  },
+  'org.rust.CRATE': {
+    'inherit': true,
   },
   'org.rust.DOC_CODE': {
     'foreground': fg.default,
     'background': bg.alternative,
   },
+  'org.rust.ENUM': {
+    'inherit': true,
+  },
+  'org.rust.ENUM_VARIANT': {
+    'inherit': true,
+  },
   'org.rust.FORMAT_PARAMETER': {
     'foreground': fg.stringInterpolation,
+  },
+  'org.rust.FUNCTION': {
+    'inherit': true,
+  },
+  'org.rust.FUNCTION_CALL': {
+    'inherit': true,
   },
   'org.rust.LIFETIME': {
     'foreground': specialLabel,
@@ -684,11 +711,56 @@ const attributes: JetbrainsAttributeSettingObject = {
   'org.rust.MACRO': {
     'foreground': fg.macro,
   },
+  'org.rust.MACRO_BINDING_IDENTIFIER': {
+    'foreground': fg.keyword,
+  },
+  'org.rust.METHOD': {
+    'inherit': true,
+  },
+  'org.rust.METHOD_CALL': {
+    'inherit': true,
+  },
+  'org.rust.MUT_BINDING': {
+    'effectColor': fg.default,
+    'effectType': '1',
+  },
+  'org.rust.MUT_SELF_PARAMETER': {
+    'foreground': fg.keyword,
+    'effectColor': fg.default,
+    'effectType': '1',
+  },
+  'org.rust.Q_OPERATOR': {
+    'inherit': true,
+  },
+  'org.rust.SELF_EXPRESSION': {
+    'inherit': true,
+  },
+  'org.rust.SELF_PARAMETER': {
+    'inherit': true,
+  },
+  'org.rust.STRUCT': {
+    'inherit': true,
+  },
+  'org.rust.TRAIT': {
+    'inherit': true,
+  },
+  'org.rust.TRAIT_METHOD': {
+    'inherit': true,
+  },
+  'org.rust.TRAIT_METHOD_CALL': {
+    'inherit': true,
+  },
   'org.rust.STATIC': {
     'foreground': fg.globalVariable,
   },
+  'org.rust.TYPE_ALIAS': {
+    'inherit': true,
+  },
   'org.rust.TYPE_PARAMETER': {
     'foreground': fg.structLike,
+  },
+  'org.rust.UNION': {
+    'inherit': true,
   },
   'org.rust.UNSAFE_CODE': {
     /** RGB=[255,236,216], HSV=[31,15,100] */
